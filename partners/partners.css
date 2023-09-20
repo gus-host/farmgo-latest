@@ -1,0 +1,89 @@
+/************************/
+/* SECTION HERO */
+/************************/
+
+.section-hero {
+  padding: 13.5rem 0 10.7rem 0;
+}
+.hero-heading-container {
+  display: flex;
+  justify-content: center;
+}
+.hero-heading-container .heading-secondary--1 {
+  line-height: 5.6rem;
+  font-size: 4.6rem;
+  font-weight: 600;
+  letter-spacing: 0em;
+
+  width: 60%;
+  text-align: center;
+  margin-bottom: 10.7rem;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+/************************/
+/* SECTION EXTRA */
+/************************/
+
+.section-extra {
+  padding-bottom: 19.8rem;
+}
+.extra-container {
+  display: flex;
+  justify-content: center;
+}
+
+.extra-text.heading-secondary--1 {
+  font-weight: 600;
+  text-align: center;
+  width: 90%;
+
+  font-size: 4.6rem;
+  font-weight: 600;
+  line-height: 7rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+/******************************************/
+/*SECTION-CTA */
+/******************************************/
+.section-cta {
+  padding: 10.8rem 0 20.7rem 0;
+}
+
+.cta-container {
+  grid-template-columns: 2fr 1fr;
+}
+
+.cta-text-container {
+  grid-template-columns: 1fr 1.5fr;
+  column-gap: 7.6rem;
+  height: 82%;
+  align-self: end;
+  /* margin-bottom: 1.7rem; */
+}
+
+.cta-text-container .cta-text {
+  margin-right: 4.7rem;
+}
+
+.cta-img {
+  width: 100%;
+  justify-self: end;
+}
+
+.heading-secondary.cta-heading {
+  margin-bottom: 3.4rem;
+}
+
+.cta-text {
+  font-size: 2.4rem;
+  line-height: 4rem;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 6.3rem;
+}

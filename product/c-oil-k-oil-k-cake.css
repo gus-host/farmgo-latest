@@ -1,0 +1,242 @@
+/*  CRUDE PALM OIL */
+/******************************************/
+/* SECTION-HERO */
+/******************************************/
+
+.section-hero {
+  padding: 12.3rem 0 14.9rem 0;
+}
+.hero-container {
+  column-gap: 8.1rem;
+}
+
+.section-crudeoil-hero .product-name {
+  margin-bottom: 5.7rem;
+}
+
+.hero-container .product-name {
+  margin-bottom: 5.7rem;
+}
+
+.palm-img {
+  width: 100%;
+}
+
+.hero-text-crude {
+  width: 86%;
+}
+
+/******************************************/
+/* SECTION-FEATURE-BOX--1 */
+/******************************************/
+
+.section-feature-box {
+  padding-bottom: 8.8rem;
+}
+.product-feature-heading::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  content: "";
+  border-top: 1px solid #000000;
+  width: 35%;
+}
+
+.section-crudeoil-feature-box--1 .product-feature-heading {
+  width: 79%;
+}
+
+.section-crudeoil-feature-box--1 .product-feature-text {
+  width: 81%;
+}
+
+.section-crudeoil-feature-box--1 .product-feature-heading::before {
+  width: 95%;
+}
+
+.product-feature-heading {
+  position: relative;
+  padding-top: 2.85rem;
+  margin-bottom: 4.55rem;
+}
+
+.product-feature-container {
+  column-gap: 8.8rem;
+}
+
+/******************************************/
+/* SECTION-FEATURE-BOX--2 */
+/******************************************/
+
+.section-feature-box--2 {
+  padding: 10.65rem 0 20rem 0;
+}
+
+.product-feature--2-container {
+  position: relative;
+}
+
+.product-feature-img-box--2 .product-feature-heading {
+  width: 40%;
+  padding: 0;
+  margin-bottom: 2.05rem;
+}
+
+.product-feature-text-box--2 {
+  width: 42%;
+}
+.product-feature-img-box--2 .product-feature-heading::before {
+  display: none;
+}
+
+/******************************************/
+/* SECTION-FEATURE-BOX--3 */
+/******************************************/
+.section-feature-box--3 {
+  padding-top: 11.5rem;
+}
+
+.product-feature-img-box--3 .product-feature-heading::before {
+  border-top: 1px solid transparent;
+}
+
+.section-kerneloil-box--3 .product-feature-heading {
+  width: 46%;
+}
+
+.product-feature-text-box--3 .product-feature-text {
+  width: 80%;
+}
+
+.palm-img--3 {
+  position: absolute;
+  bottom: 0;
+  right: 3%;
+  width: 43%;
+  height: 85%;
+}
+.product-feature-text span {
+  display: inline-block;
+  margin-bottom: 2.85rem;
+}
+
+/*PALM KENNEL OIL */
+
+.hero-text span {
+  display: inline-block;
+  margin: 2rem 0 0.8rem 0;
+}
+
+.img-container.kennel-img-container {
+  align-self: start;
+}
+.kennel-hero-text {
+  margin-bottom: 2.6rem;
+  width: 75%;
+}
+
+/*PALM KENNEL CAKE */
+.kennel-cake-container .hero-text {
+  align-self: start;
+  width: 73%;
+}
+
+.section-kernel-cake-hero .product-name {
+  margin-bottom: 5.7rem;
+}
+
+.kennel-cake-section-feature-box--1 {
+  padding-bottom: 24.2rem;
+}
+.kennel-cake-container--1 {
+  position: relative;
+}
+
+.kennel-cake-container--1 .palm-img--2 {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  width: 45%;
+  height: 95%;
+}
+
+.kennel-cake-container--1 .heading-tertiary {
+  width: 49%;
+  margin-bottom: 3rem;
+}
+.kennel-cake-container--1 .heading-tertiary::before {
+  width: 80%;
+}
+
+.kennel-cake-container--1 .product-feature-text-box--1 {
+  width: 40%;
+}
+.kennel-cake-container--2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.kennel-cake-text-box {
+  width: 47%;
+}
+
+.kennel-cake-container--2 .heading-tertiary,
+.kennel-cake-container--2 .product-feature-text-box--2 {
+  width: 100%;
+}
+
+.kennel-cake-text-box .palm-img--3 {
+  width: 46%;
+  left: 2%;
+  top: 0;
+  height: 100%;
+}
+
+.kennel-cake-section-feature-box--3 {
+  padding: 20.3rem 0 17.8rem 0;
+}
+
+.kennel-cake-section-feature-box--3 .heading-tertiary {
+  width: 45%;
+}
+
+.kennel-cake-section-feature-box--3 .heading-tertiary::before {
+  border-top: 1px solid;
+}
+
+.kennel-cake-section-feature-box--3 .product-feature-text-box--3 {
+  width: 44%;
+}
+
+.kennel-cake-section-feature-box--3 .palm-img--2 {
+  width: 48%;
+  height: 100%;
+}
+
+.kennel-cake-section-feature-box--3 .product-feature-text {
+  width: 97%;
+}
+
+/*DRONE */
+
+.section-drone {
+  padding: 12.3rem 0 15.8rem 0;
+}
+
+.section-drone .sub-heading::after {
+  content: "Coming soon";
+  color: #efa561;
+  margin-left: 0.7rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.hero-text--1 {
+  margin-bottom: 11rem;
+}
+
+.hero-text--2 {
+  margin-bottom: 5rem;
+}

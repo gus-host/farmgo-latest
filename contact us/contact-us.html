@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Rubik:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/general.css" />
+    <link rel="stylesheet" href="/contact us/contact-us.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script defer src="/script.js"></script>
+    <title>Farmgo &dash; contact us</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <img
+          class="logo"
+          src="/images/logos/farmgo logo.png"
+          alt="Famgo-logo"
+          height="85.94"
+        />
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li>
+              <a class="main-nav-link" href="/about us/about-us.html"
+                >About Us</a
+              >
+            </li>
+            <li class="main-nav-link-products">
+              <a class="main-nav-link" href="/product/products.html"
+                >Product
+                <ion-icon
+                  class="products-icon"
+                  name="caret-forward-outline"
+                ></ion-icon
+              ></a>
+
+              <ul class="product-sublinks">
+                <li>
+                  <a class="main-nav-link" href="/product/palm kennel oil.html"
+                    >Palm Kennel Oil</a
+                  >
+                </li>
+                <li>
+                  <a class="main-nav-link" href="/product/crude palm oil.html"
+                    >Crude Palm Oil</a
+                  >
+                </li>
+                <li>
+                  <a class="main-nav-link" href="/product/palm kennel cake.html"
+                    >Palm Kennel Cake</a
+                  >
+                </li>
+                <li>
+                  <a class="main-nav-link" href="/product/drone.html">Drone</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="main-nav-link" href="/partners/partners.html"
+                >Partners</a
+              >
+            </li>
+            <li><a class="main-nav-link" href="/blog/blog.html">Blog</a></li>
+            <li><a class="main-nav-link" href="/media/media.html">Media</a></li>
+          </ul>
+          <span>
+            <a class="main-nav-link nav-cta" href="/contact us/contact-us.html"
+              >Contact us</a
+            >
+          </span>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-contact page-bg-color">
+        <div class="container">
+          <div class="contact-heading-box">
+            <h2 class="contact-heading spec-color">
+              We would love to hear from you
+            </h2>
+            <p class="contact-text lighter-text">
+              Tell us how you want to explore our product.<br />
+              We want to hear from you
+            </p>
+          </div>
+          <div class="contact-means-box grid grid--3-cols">
+            <div class="contact-means contact-means--1">
+              <ion-icon class="contact-icon spec-color" name="mail"></ion-icon>
+              <span class="means-name lighter-text">Email</span>
+              <p class="lighter-text">
+                Send an email to
+                <span class="spec-color">onefarmgo@gmail.com</span>
+              </p>
+            </div>
+            <div class="contact-means contact-means--2">
+              <ion-icon class="contact-icon spec-color" name="call"></ion-icon>
+              <span class="means-name lighter-text">Call us</span>
+              <p class="lighter-text">
+                Dial <span class="spec-color">+234 7067 067 534</span><br />
+                to speak with us
+              </p>
+            </div>
+            <div class="contact-means contact-means--3">
+              <ion-icon
+                class="contact-icon spec-color"
+                name="chatbubble-ellipses"
+              ></ion-icon>
+              <span class="means-name lighter-text">Chat us</span>
+              <p class="means-description lighter-text">
+                Get real-time responses via WhatsApp on
+                <span class="spec-color">+234 7067 067 534</span>
+              </p>
+            </div>
+          </div>
+          <div class="form-box grid grid--2-cols">
+            <img
+              src="/images/contact-us-img/contact-img.png"
+              alt="A customer service provider ready at work"
+              class="contact-img"
+            />
+
+            <form
+              onsubmit="sendEmail(); reset(); return false;"
+              class="contact-form"
+              method="post"
+            >
+              <div class="form-field">
+                <label for="full-name">Full Name</label>
+                <input
+                  id="full-name"
+                  class="form-input text-input"
+                  type="text"
+                  placeholder="e.g Samuel Eli"
+                  name="full-name"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="Phone">Phone</label>
+                <div class="phone-box">
+                  <span class="country-code">
+                    <div class="nig-box">
+                      <img
+                        src="/images/contact-us-img/nig.png"
+                        alt="Nigeria flag"
+                        class="nig"
+                      />
+                    </div>
+                    <span class="code">+234</span>
+                  </span>
+                  <input
+                    id="phone"
+                    class="form-input text-input"
+                    type="text"
+                    placeholder="7012345678"
+                    name="phone"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  class="form-input text-input"
+                  type="email"
+                  placeholder="Example@gmail.com"
+                  name="email"
+                  required
+                />
+              </div>
+              <div class="form-field">
+                <label for="subject">Subject</label>
+                <input
+                  id="subject"
+                  class="form-input text-input"
+                  type="text"
+                  placeholder="What is your message about"
+                  name="subject"
+                  required
+                />
+              </div>
+              <div class="form-field form-field--3">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  class="text-input"
+                  type="text"
+                  placeholder="Enter message"
+                  name="message"
+                  cols="33"
+                  rows="15"
+                  required
+                ></textarea>
+              </div>
+              <div class="submit-box">
+                <div class="success-box page-bg-color">
+                  <ion-icon
+                    class="success-icon"
+                    name="checkmark-circle"
+                  ></ion-icon>
+                  <p class="success-text">
+                    Success! Thank you for contacting us.
+                  </p>
+                </div>
+                <button class="form-btn" type="submit">Send message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container grid grid--footer">
+        <div class="footer-col-block--1">
+          <div class="footer-logo">
+            <img
+              class="logo"
+              src="/images/logos/Footer-logo.png"
+              alt="omnifood-logo"
+            />
+          </div>
+          <div class="footer-links-container">
+            <ul class="footer-nav-links footer-nav-links--1">
+              <li>
+                <a class="footer-link" href="/about us/about-us.html"
+                  >About us</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="/product/products.html"
+                  >Products</a
+                >
+              </li>
+              <li>
+                <a class="footer-link" href="/partners/partners.html"
+                  >Partners</a
+                >
+              </li>
+            </ul>
+            <ul class="footer-nav-links footer-nav-links--2">
+              <li>
+                <a class="footer-link" href="/blog/blog.html">Blog</a>
+              </li>
+              <li>
+                <a class="footer-link" href="/media/media.html">Media</a>
+              </li>
+              <li>
+                <a class="footer-link" href="/contact us/contact-us.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <p class="copyright">&copy; Copyright Farmgo 2023</p>
+        </div>
+        <div class="footer-col-block--2">
+          <div class="footer-address">
+            <p class="footer-heading">Contact Us</p>
+            <p class="address">
+              Idi Ori, Yewa Local government, Ogun state, Nigeria.
+            </p>
+          </div>
+          <div class="footer-social-links">
+            <p class="footer-heading">Follow Us</p>
+            <ul class="social-links">
+              <li>
+                <a
+                  href="https://x.com/farmgohq"
+                  class="footer-link"
+                  target="_blank"
+                  ><ion-icon class="footer-img" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon class="footer-img" name="logo-linkedin"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a href="#" class="footer-link">
+                  <ion-icon class="footer-img" name="logo-instagram"></ion-icon
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div class="register-newsletter">
+            <div class="success-box page-bg-color">
+              <ion-icon class="success-icon" name="checkmark-circle"></ion-icon>
+              <p class="success-text">Success! Your email has been recorded.</p>
+            </div>
+            <p class="footer-heading nl-heading">Join our Newsletter</p>
+            <form class="footer-form">
+              <input
+                class="footer-input"
+                required
+                type="email"
+                name="email"
+                placeholder="you@email.com"
+              />
+              <span class="footer-btn">
+                <button
+                  type="submit"
+                  style="
+                    text-decoration: none;
+                    color: #fff;
+                    border: none;
+                    background-color: transparent;
+                    font-size: 3rem;
+                  "
+                >
+                  &rarr;
+                </button></span
+              >
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const btn = document.querySelector(".form-btn");
+      const contactForm = document.querySelector(".contact-form");
+      const allFormInput = document.querySelectorAll(".text-input");
+
+      // btn.addEventListener("submit", function (e) {
+      function sendEmail() {
+        function resetForm(e) {
+          allFormInput.forEach(function (link) {
+            link.value = "";
+          });
+          e.preventDefault();
+        }
+        contactForm.classList.add("success");
+        setTimeout(() => {
+          contactForm.classList.remove("success");
+        }, "5000");
+        const name = document.getElementById("full-name").value;
+        const phone = document.getElementById("phone").value;
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
+        const body =
+          "Name: " +
+          name +
+          "<br/> Phone: " +
+          phone +
+          "<br/> Email: " +
+          email +
+          "<br/> Subject: " +
+          subject +
+          "<br/> Message: " +
+          message;
+        Email.send({
+          SecureToken: "8f15d9ac-88bc-455a-acb2-7f5cbc36341c",
+          To: "Onefarmgo@gmail.com",
+          From: "christian.obi.248679@farmgo.co",
+          Subject: "Contact Message",
+          Body: body,
+        }).then((message) => resetForm());
+      }
+    </script>
+  </body>
+</html>
